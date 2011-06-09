@@ -1,0 +1,15 @@
+[submodule "bundle-available/nerdtree"]
+	path = bundle-available/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle-available/snipmate.vim"]
+	path = bundle-available/snipmate.vim
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle-available/vim-colors-solarized"]
+	path = bundle-available/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle-available/synctastic"]
+	path = bundle-available/synctastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "bundle-available/jslint"]
+	path = bundle-available/jslint
+	url = http://github.com/hallettj/jslint.vim
