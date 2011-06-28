@@ -1,5 +1,21 @@
 syntax on
 
+" TAB versus spaces
+function! Tabs()
+    set noexpandtab		" Treat TAB as TABS
+    set tabstop=4		" TAB is actually 4 spaces
+    set shiftwidth=4	" Doing >> on a block whill shift it one tab (based on ts setting above)
+    set softtabstop=4   " makes the spaces feel like real tabs
+endfunction
+
+" SPACES versus tabs
+function! Spaces()
+    set expandtab		" Treat TAB as spacesa
+    set tabstop=4		" TAB is actually 4 spaces
+    set shiftwidth=4	" Doing >> on a block whill shift it one tab (based on ts setting above)
+    set softtabstop=4   " makes the spaces feel like real tabs
+endfunction
+
 set showmatch		" Show matching brackets.
 "set ignorecase		" Do case insensitive matching
 "set smartcase		" Do smart case matching
@@ -20,15 +36,12 @@ set encoding=utf-8 " UTF-8 encoding
 set laststatus=2    " Show info in ruler
 set statusline=%F%m%r%h%w\ [TYPE=%Y]\ (%l/%L,%v)\ %p%%
 set wildmode=longest,list,full " Let TAB completion behave like bash's
-
 set showtabline=2	" Always show tab line
-set tabstop=4		" TAB is actually 4 spaces
-set shiftwidth=4	" Doing >> on a block whill shift it one tab (based on ts setting above)
-set softtabstop=4   " makes the spaces feel like real tabs
-set expandtab		" Treat TAB as spacesa
+
+:call Spaces()      " By default, TABs are treated as spaces
 
 " Leader key (default is \)
-let mapleader = "<"
+let mapleader = "\\"
 
 " tab navigation
 :nmap <A-PageUp> :tabprevious<CR>
@@ -71,7 +84,6 @@ nnoremap <leader><space> :noh<cr>
 ":nmap <silent> <C-Down> <C-w>+
 
 " copen/ccl toggle
-
 " toggles the quickfix window.
 function! QFixToggle(forced)
   if exists("g:qfix_win") && a:forced == 0
