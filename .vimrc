@@ -119,8 +119,8 @@ filetype plugin on
 
 " themes
 set background=dark
-set t_Co=256
-colorscheme solarized
+"set t_Co=256
+"colorscheme solarized
 
 " NERDTree
 :let NERDChristmasTree=1
@@ -145,6 +145,10 @@ let g:JSLintHighlightErrorLine=1
 
 " Localvimrc
 let g:localvimrc_ask=0 " No need to ask if .lvimrc should be processed
+
+" CTRLP
+let g:ctrlp_working_path_mode=0
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " Current line highlighting only for current window
 "set cursorline
