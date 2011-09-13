@@ -25,3 +25,6 @@
 [submodule "bundle-available/ctrlp"]
 	path = bundle-available/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle-available/neverland"]
+	path = bundle-available/neverland
+	url = https://github.com/trapd00r/neverland-vim-theme
