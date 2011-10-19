@@ -120,8 +120,7 @@ filetype plugin on
 " themes
 set background=dark
 set t_Co=256
-colorscheme neverland2-darker
-"colorscheme solarized
+colorscheme neverland-darker
 
 " NERDTree
 :let NERDChristmasTree=1
