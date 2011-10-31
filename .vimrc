@@ -109,7 +109,11 @@ map <leader>l :NERDTreeFind<CR>
 map <leader>r :TlistToggle<CR>
 
 " remove trailing spaces
-autocmd FileType c,cpp,java,php autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+func! DeleteTrailingWS()
+    :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+endfunc
+autocmd FileType c,cpp,java,php,py autocmd BufWritePre <buffer> :call DeleteTrailingWS()
+autocmd BufWritePre *.py :call DeleteTrailingWS()
 
 " Pathogen
 filetype off
