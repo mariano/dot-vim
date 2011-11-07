@@ -41,7 +41,7 @@ set wildmode=longest,list,full " Let TAB completion behave like bash's
 set showtabline=2	" Always show tab line
 
 :call Spaces()      " By default, TABs are treated as spaces
-set list listchars=tab:▸\ ,eol:¬,trail:·
+set list listchars=eol:¬,tab:▸\ ,trail:·,extends:→,precedes:←
 
 " Leader key (default is \)
 let mapleader = "\\"
