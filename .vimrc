@@ -117,7 +117,7 @@ autocmd BufWritePre *.py :call DeleteTrailingWS()
 
 " Pathogen
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect
 "call pathogen#helptags() "call this when installing new plugins 
 filetype plugin on
 
