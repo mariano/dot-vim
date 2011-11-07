@@ -23,6 +23,8 @@ set showmatch		" Show matching brackets.
 "set autowrite		" Automatically save before commands like :next and :make
 set hidden         " Hide buffers when they are abandoned
 set hlsearch		" Highlight search matches
+" Clear search highlighting
+map <Leader><Space> :nohl<CR>
 
 "set mouse=a			" Enable mouse usage (all modes) in terminals
 set showcmd			" Show (partial) command in status line.
@@ -39,6 +41,7 @@ set wildmode=longest,list,full " Let TAB completion behave like bash's
 set showtabline=2	" Always show tab line
 
 :call Spaces()      " By default, TABs are treated as spaces
+set list listchars=tab:▸\ ,eol:¬,trail:·
 
 " Leader key (default is \)
 let mapleader = "\\"
