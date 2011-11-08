@@ -36,7 +36,10 @@ set cindent		" indent on cinwords
 set fileencodings=utf-8	" UTF-8 encoding
 set encoding=utf-8 " UTF-8 encoding
 set laststatus=2    " Show info in ruler
-set statusline=%F%m%r%h%w\ [TYPE=%Y]\ (%l/%L,%v)\ %p%%
+set statusline=%F%m%r%h%w\ (%l/%L,%v)\ %p%%
+set statusline+=%=
+set statusline+=[%{strlen(&ft)?&ft:'(none)'}\ %{&encoding}]
+set statusline+=\ %{fugitive#statusline()}
 set wildmode=longest,list,full " Let TAB completion behave like bash's
 set showtabline=2	" Always show tab line
 
@@ -158,7 +161,7 @@ let g:ctrlp_working_path_mode=0
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " Current line highlighting only for current window
-"set cursorline
+set cursorline
 "autocmd WinEnter * setlocal cursorline
 "autocmd WinLeave * setlocal nocursorline
 "hi Cursorline ctermbg=grey
