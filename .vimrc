@@ -145,6 +145,7 @@ colorscheme neverland-darker
 let g:syntastic_auto_loc_list=1 " Auto-open error window if errors are detected
 let g:syntastic_enable_signs=1
 let g:syntastic_c_check_header=1
+let g:syntastic_c_no_include_search = 1 " Disable the search of included header files after special libraries
 let g:syntastic_c_auto_refresh_includes=1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
