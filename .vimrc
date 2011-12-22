@@ -166,3 +166,8 @@ set cursorline
 "autocmd WinEnter * setlocal cursorline
 "autocmd WinLeave * setlocal nocursorline
 "hi Cursorline ctermbg=grey
+
+" Visual line marking 80 characters (vim 7.3)
+if v:version >= 703
+    set colorcolumn=80
+endif
