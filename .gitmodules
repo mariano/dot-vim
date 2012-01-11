@@ -34,3 +34,6 @@
 [submodule "bundle-available/supertab"]
 	path = bundle-available/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "bundle-available/vim-pasta"]
+	path = bundle-available/vim-pasta
+	url = https://github.com/sickill/vim-pasta
