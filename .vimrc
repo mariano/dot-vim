@@ -157,10 +157,6 @@ let g:JSLintHighlightErrorLine=1
 " Localvimrc
 let g:localvimrc_ask=0 " No need to ask if .lvimrc should be processed
 
-" CTRLP
-let g:ctrlp_working_path_mode=0
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-
 " Current line highlighting only for current window
 set cursorline
 "autocmd WinEnter * setlocal cursorline
