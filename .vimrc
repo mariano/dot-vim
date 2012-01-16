@@ -35,6 +35,7 @@ set cinwords=if,else,while,do,for,switch,case	" Which keywords should indent
 set cindent		" indent on cinwords
 set fileencodings=utf-8	" UTF-8 encoding
 set encoding=utf-8 " UTF-8 encoding
+set visualbell " Don't bother me with sounds
 set laststatus=2    " Show info in ruler
 set statusline=%F%m%r%h%w\ (%l/%L,%v)\ %p%%
 set statusline+=%=
