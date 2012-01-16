@@ -161,9 +161,6 @@ let g:localvimrc_ask=0 " No need to ask if .lvimrc should be processed
 let g:ctrlp_working_path_mode=0
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
-" vim-pasta
-let g:pasta_disabled_filetypes = ['python', 'coffee', 'yaml']
-
 " Current line highlighting only for current window
 set cursorline
 "autocmd WinEnter * setlocal cursorline
