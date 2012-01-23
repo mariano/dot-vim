@@ -35,9 +35,8 @@ set cinwords=if,else,while,do,for,switch,case	" Which keywords should indent
 set cindent		" indent on cinwords
 set fileencodings=utf-8	" UTF-8 encoding
 set encoding=utf-8 " UTF-8 encoding
-set noerrorbells " No beeps
-set visualbell " visual bell
-set t_vb= " But really disable visual bell
+set noerrorbells visualbell t_vb= " No beeps, or visual bell
+autocmd GUIEnter * set visualbell t_vb= " No visual bell after GUI loaded
 set laststatus=2    " Show info in ruler
 set statusline=%F%m%r%h%w\ (%l/%L,%v)\ %p%%
 set statusline+=%=
