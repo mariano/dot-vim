@@ -114,7 +114,9 @@ augroup END
 " NERDTree navigation
 map <leader>g :NERDTreeToggle<CR>
 map <leader>l :NERDTreeFind<CR>
-map <leader>r :TlistToggle<CR>
+
+" CommandT
+map <leader>r :CommandTFlush<CR>
 
 " remove trailing spaces
 func! DeleteTrailingWS()
