@@ -60,7 +60,7 @@ let mapleader = "\\"
 :imap <A-PageDown> <Esc>:tabnext<CR>i
 :nmap <C-t> :tabnew<CR>
 :imap <C-t> <Esc>:tabnew<CR>
-:map <C-x> :tabclose<CR>
+:map <C-x> :q<CR>
 :nmap <C-a> :w<CR>
 :imap <C-a> <Esc>:w<CR>
 
