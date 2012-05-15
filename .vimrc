@@ -123,6 +123,7 @@ func! DeleteTrailingWS()
     :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 endfunc
 autocmd FileType c,cpp,java,php,py autocmd BufWritePre <buffer> :call DeleteTrailingWS()
+autocmd FileType php setlocal noeol binary fileformat=dos " No trailing new line
 autocmd BufWritePre *.py :call DeleteTrailingWS()
 
 " Pathogen
