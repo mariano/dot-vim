@@ -37,3 +37,6 @@
 [submodule "bundle-available/summerfruit256"]
 	path = bundle-available/summerfruit256
 	url = https://github.com/baeuml/summerfruit256.vim.git
+[submodule "bundle-available/vim-gnupg"]
+	path = bundle-available/vim-gnupg
+	url = https://github.com/jamessan/vim-gnupg.git
