@@ -138,6 +138,8 @@ if has('gui_running')
 	set t_Co=256
 	colorscheme neverland-darker
 else
+	set background=dark
+	set t_Co=256
 	colorscheme transparent
 endif
 
