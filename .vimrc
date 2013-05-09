@@ -133,9 +133,13 @@ call pathogen#infect()
 filetype plugin on
 
 " themes
-set background=dark
-set t_Co=256
-colorscheme neverland-darker
+if has('gui_running')
+	set background=dark
+	set t_Co=256
+	colorscheme neverland-darker
+else
+	colorscheme transparent
+endif
 
 " NERDTree
 :let NERDChristmasTree=1

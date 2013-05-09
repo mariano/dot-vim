@@ -40,3 +40,6 @@
 [submodule "bundle-available/vim-gnupg"]
 	path = bundle-available/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "bundle-available/transparent"]
+	path = bundle-available/transparent
+	url = https://github.com/vim-scripts/Transparent.git
