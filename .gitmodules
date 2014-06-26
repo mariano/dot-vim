@@ -43,3 +43,6 @@
 [submodule "bundle-available/transparent"]
 	path = bundle-available/transparent
 	url = https://github.com/vim-scripts/Transparent.git
+[submodule "bundle-available/vim-phpqa"]
+	path = bundle-available/vim-phpqa
+	url = https://github.com/joonty/vim-phpqa.git
