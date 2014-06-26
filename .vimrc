@@ -168,6 +168,11 @@ set statusline+=%*
 " JSLint
 let g:JSLintHighlightErrorLine=1
 
+" Disable PHPQA by default
+let g:phpqa_messdetector_autorun = 0
+let g:phpqa_codecoverage_autorun = 0
+let g:phpqa_codesniffer_autorun = 0
+
 " Localvimrc
 let g:localvimrc_ask=0 " No need to ask if .lvimrc should be processed
 
