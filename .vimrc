@@ -45,7 +45,7 @@ set statusline+=\ %{fugitive#statusline()}
 set wildmode=longest,list,full " Let TAB completion behave like bash's
 set showtabline=2	" Always show tab line
 
-:call Tabs()      " By default, TABs are treated as tabs
+:call Spaces()      " By default, TABs are treated as tabs
 set list listchars=eol:¬,tab:▸\ ,trail:·,extends:→,precedes:←
 
 " Leader key (default is \)
