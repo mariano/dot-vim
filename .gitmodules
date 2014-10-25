@@ -46,3 +46,6 @@
 [submodule "bundle-available/vim-phpqa"]
 	path = bundle-available/vim-phpqa
 	url = https://github.com/joonty/vim-phpqa.git
+[submodule "bundle-available/vim-gitgutter"]
+	path = bundle-available/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
