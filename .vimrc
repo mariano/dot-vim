@@ -190,3 +190,7 @@ set cursorline
 if v:version >= 703
     set colorcolumn=80
 endif
+
+"fix Vim's horribly broken default regex 'handling'
+nnoremap / /\v
+vnoremap / /\v
