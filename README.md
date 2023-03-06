@@ -1,4 +1,6 @@
-# My .vim directory #
+# DEPRECATED #
+
+This set of VIM configurations is largely deprecated. If you want the newest, hottest stuff, it lives at [https://github.com/mariano/dot](https://github.com/mariano/dot)
 
 ## INSTALL ##
 
